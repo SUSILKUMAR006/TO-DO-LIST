@@ -7,7 +7,7 @@ app.use(express.json());
 
 const port = process.env.PORT || 4000;
 // DB connectivity
-mongoose.connect("mongodb://localhost:27017/ToDo-App").then(() => {
+mongoose.connect("mongodb+srv://susilkumar18mass:Susil2006@cluster0.h6xzhei.mongodb.net/ToDo-App").then(() => {
     console.log('DB connected successfully');
 }).catch((err) => {
     console.log(err);
