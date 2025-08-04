@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body{
+  background-image: url('./assets/back1.jpg');
+  background-size:cover;
+  font-family: "Poppins", sans-serif;
+}
