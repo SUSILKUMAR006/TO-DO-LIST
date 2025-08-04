@@ -12,7 +12,7 @@ const App = () => {
   // Fetch day data from backend
   const fetchDayData = async () => {
     try {
-      const response = await fetch('http://localhost:4000/day');
+      const response = await fetch('https://to-do-list-backend-yoq7.onrender.com/day');
       const data = await response.json();
       setDayCount(data.dayCount);
       setDayCompleted(data.completed);
@@ -55,7 +55,7 @@ const App = () => {
   const handleComplete = async () => {
     if (!dayCompleted) {
       try {
-        const response = await fetch('http://localhost:4000/day/complete', {
+        const response = await fetch('https://to-do-list-backend-yoq7.onrender.com/day/complete', {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const App = () => {
 
 const handleReset = async () => {
   try {
-    await axios.delete('http://localhost:4000/reset-all');
+    await axios.delete('https://to-do-list-backend-yoq7.onrender.com/reset-all');
     toast.success('✅ App reset successfully!');
     setDayCount(1);
     setDayCompleted(false);
