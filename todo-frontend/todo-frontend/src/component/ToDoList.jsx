@@ -3,7 +3,7 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const ToDoList = () => {
-    const url = 'https://to-do-list-backend-yoq7.onrender.com
+    const url = 'https://to-do-list-backend-yoq7.onrender.com'
     const [title, setTitle] = useState("");
     const [descrition, setDescription] = useState("");
     const [data, setData] = useState([]);
